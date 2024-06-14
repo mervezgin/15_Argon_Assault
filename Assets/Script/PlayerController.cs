@@ -8,9 +8,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] InputAction movement;
     [SerializeField] float controlSpeed;
     float xRange = 10.0f;
-    float yRange1 = -1f;
-    float yRange2 = 11.0f;
-
+    float yRange1 = -5.0f;
+    float yRange2 = 8.0f;
 
     // Start is called before the first frame update
     void Start()
