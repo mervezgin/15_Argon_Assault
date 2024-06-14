@@ -650,7 +650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 51443932677242410, guid: 3c545d09133f640bcb0a96866db0b2cc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 51443932677242410, guid: 3c545d09133f640bcb0a96866db0b2cc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -687,6 +687,10 @@ PrefabInstance:
     - target: {fileID: 4400822323810916047, guid: 3c545d09133f640bcb0a96866db0b2cc, type: 3}
       propertyPath: m_Name
       value: PlayerShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 6762847225844404684, guid: 3c545d09133f640bcb0a96866db0b2cc, type: 3}
+      propertyPath: controlSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

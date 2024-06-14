@@ -683,7 +683,7 @@ MonoBehaviour:
       m_Action: Movement
       m_Flags: 8
     m_Flags: 0
-  controlSpeed: 25
+  controlSpeed: 12
 --- !u!1 &4630388164811104574
 GameObject:
   m_ObjectHideFlags: 0
