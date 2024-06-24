@@ -18,9 +18,9 @@ public class PlayerController : MonoBehaviour
     float yRange2 = 8.0f;
 
     float pitchPositionFactor = -2.0f;
-    float controlPitchFactor = -10.0f;
+    float controlPitchFactor = -15.0f;
     float yawPositionFactor = 2.5f;
-    float controlRollFactor = -10.0f;
+    float controlRollFactor = -20.0f;
 
     // Start is called before the first frame update
     void Start()
