@@ -13,9 +13,8 @@ public class PlayerController : MonoBehaviour
     float horizontalThrow;
     float verticalThrow;
 
-    float xRange = 10.0f;
-    float yRange1 = -5.0f;
-    float yRange2 = 8.0f;
+    float xRange = 13.0f;
+    float yRange = 9f;
 
     float pitchPositionFactor = -2.0f;
     float controlPitchFactor = -15.0f;
@@ -65,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
         float yOffset = verticalThrow * Time.deltaTime * controlSpeed;
         float rawYPos = transform.localPosition.y + yOffset;
-        float clampedYPos = Mathf.Clamp(rawYPos, yRange1, yRange2);
+        float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
 
