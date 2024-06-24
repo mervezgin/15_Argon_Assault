@@ -14,7 +14,8 @@ public class PlayerController : MonoBehaviour
     float verticalThrow;
 
     float xRange = 13.0f;
-    float yRange = 9f;
+    float yRange1 = -3.5f;
+    float yRange2 = 13f;
 
     float pitchPositionFactor = -2.0f;
     float controlPitchFactor = -15.0f;
@@ -24,7 +25,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     void OnEnable()
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
         float yOffset = verticalThrow * Time.deltaTime * controlSpeed;
         float rawYPos = transform.localPosition.y + yOffset;
-        float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
+        float clampedYPos = Mathf.Clamp(rawYPos, yRange1, yRange2);
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
 
